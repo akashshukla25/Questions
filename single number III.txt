@@ -1,0 +1,7 @@
+    def singleNumber(self, nums: List[int]) -> List[int]:
+        a=[]
+        count = Counter(nums)
+        for k,v in count.items():
+            if v==1:
+                a.append(k)
+        return a
